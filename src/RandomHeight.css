@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style-type: none;
+}
+.infinite-list-container{
+    width: 800px;
+    height: 500px;
+    overflow-y: auto;
+    outline:1px solid #ccc;
+    margin-left:100px;
+    margin-top:50px;
+    position: relative;
+}
+.infinite-list-phantom{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.infinite-list{
+    position: absolute;
+    width:100%;
+}
+.infinite-list-item{
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
